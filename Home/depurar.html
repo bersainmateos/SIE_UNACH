@@ -1,0 +1,137 @@
+ 
+<html>
+<head> 
+  <link rel="icon" href="../favicon.ico">
+  <title>UNACH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/alertify.css">
+  <link rel="stylesheet"  href="../css/Slider.css">
+  <link rel="stylesheet" href="../css/estilos_propios.css">
+  <link rel="stylesheet"  href="../css/encuesta_style.css">
+  <script src="../javascript/Chart.bundle.js"></script>
+
+<body>
+
+  <header>
+      <nav class="navbar navbar-expand-md navbar-dark " style="background-color:rgb(7,66,127);" >
+      <img  src="../imagenes/logo_unach.jpg"  alt="Logo Unach" class="mr-md-auto imgunach">
+       <!--  <a class="navbar-brand" href="#">Carousel</a> -->
+
+<a class="navbar-brand Inicio" href="http://localhost/SRI_UNACH/Home/Egresado"><span class="glyphicon glyphicon-home"></span><b> INICIO </b></a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+ 
+          <a class="nav-item nav-link" href="http://localhost/SRI_UNACH/Home/Egresado"><span class="glyphicon glyphicon-eye-open"></span><b> Encuesta </b></a>
+
+          <div class="nav-item nav-link">
+          <span class="glyphicon glyphicon-user ">Bienvenido(a):</span>  <b style="color:white;">&nbsp;BERSAIN MATEOS MENDEZ</b></div>  <a   href="./php/logout.php" class="btn btn-danger">Salir</a> </div>          </ul>
+        </div>
+      </nav>
+    </header>
+<div class="container socket" socket='localhost' url='http://localhost/SRI_UNACH/Home/'>
+  
+<div class="wrapper">
+  <div id="wizard" class="wizard">    
+    <div class="wizard__content">  
+      <header class="wizard__header">
+        <div class="wizard__header-overlay">
+         </div>
+        <div class="wizard__steps">
+
+          <nav class="steps">
+         
+                      <div class="c85   step  "> 
+            <div class="step__content">
+              <p class="step__number"><i class="fa fa-github-alt"></i></p>
+              <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            
+                 <circle class="checkmark__circle si" cx="26" cy="26" r="25" fill="none"/>
+                 
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+               
+              </svg>
+
+              <div class="lines">
+                <div class="line -start">
+                </div>
+
+                <div class="line -background">
+                </div>
+
+                <div class="line -progress">
+                </div>
+              </div>  
+            </div>
+          </div>
+
+                </nav>
+        </div>
+      </header>
+       <div style="margin: 30px">
+        <center><button class="btn btn-danger previous">Anterior</button>
+         <button class="btn btn-success next">Siguiente</button></center>
+      </div>
+      
+      <div class="panels" style="background: rgba(100,01,0,.5);">
+        
+<div class="panel" style="background: rgba(100,100,0,.5);">
+
+
+<div class="form-group panel__subheading "><h6 class=" control-label " data-id_pregunta="130"> 1). ¿CUAL ES TU EDAD? <label class='text-danger'>*</label>
+       </h6><!--  -->
+
+<input type="date" data-requerida="1" data-id_res="220" data-ver_tipo="libre" data-id_pregunta=130 class="form-control respuesta_ 1"><!-Si modificas en está parte me dare cuenta en la base de datos!--><br>
+
+</div>
+<div class="form-group panel__subheading "><h6 class="col-xs-12 control-label " data-id_pregunta="134"> 2). ¿CUAL ES TU MÚSICA FAVORITA? <label class='text-danger'>*</label>
+       </h6><!--  -->
+
+<input type="text" data-requerida="1" data-id_res="219" data-ver_tipo="libre" data-id_pregunta=134 class="form-control respuesta_ 2"><!-Si modificas en está parte me dare cuenta en la base de datos!--><br>
+
+</div>
+<div class="form-group panel__subheading "><h6 class="col-xs-12 control-label " data-id_pregunta="131"> 3). ¿COMO TE LLAMAS? <label class='text-danger'>*</label>
+       </h6><!--  -->
+
+<input type="text" data-requerida="1" data-id_res="219" data-ver_tipo="libre" data-id_pregunta=131 class="form-control respuesta_ 3"><!-Si modificas en está parte me dare cuenta en la base de datos!--><br>
+
+</div>
+<br><button   id="g" onclick="capturar(85,3,1,4)"  class="btn btn-info " data-id_encuesta="85">¡Guardar Encuesta!</button>
+      </div>
+
+      </div>
+      <br>
+      <div class="img fixed-bottom" style="display: none;" >
+          <center><img src="../imagenes/espera.gif"></center>
+        </div>
+     
+    </div>
+    
+  </div>
+</div>  
+<!--  -->
+</div>
+
+
+  <script src="../javascript/Home/jquery.js"></script>
+  <script src="../javascript/Admin/bootstrap.js"></script>
+  <script >
+  var ip=$('.socket').attr('socket');;
+
+</script>
+   <script src="../javascript/fancywebsocket.js"></script>
+  <script src="../javascript/Admin/alertify.js"></script>
+  <script src="../javascript/Home/wowslider.js"></script>
+  <script src="../javascript/Home/script.js"></script>
+  <script src="../javascript/Home/control.js"></script>
+  <script src="../javascript/Home/encuesta.js"></script>
+
+  
+</body>
+</html>  
